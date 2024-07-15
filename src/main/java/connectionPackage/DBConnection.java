@@ -13,7 +13,7 @@ public class DBConnection {
     private String password = "";
 
     // Privater Konstruktor, damit keine weiteren Instanzen erstellt werden können
-    private DBConnection() throws SQLException {
+   private DBConnection() throws SQLException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             this.connection = DriverManager.getConnection(url, username, password);
