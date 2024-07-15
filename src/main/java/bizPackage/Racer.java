@@ -16,9 +16,7 @@ public class Racer {
 
     private String nationality;
 
-    private int teamID;
-
-    private LocalDate startDate;
+    private Employment currentEmployment;
 
 
     //++++++++++++++++++++++Constructors++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -30,14 +28,14 @@ public class Racer {
         setNationality(nationality);
     }
 
-    public Racer(String firstName, String lastName, LocalDate dateOfBirth, int addressID, String nationality, int teamID, LocalDate startDate) {
+    public Racer(String firstName, String lastName, LocalDate dateOfBirth, int addressID, String nationality, Employment currentEmployment) {
         setFirstName(firstName);
         setLastName(lastName);
         setDateOfBirth(dateOfBirth);
         setAddressID(addressID);
         setNationality(nationality);
-        setTeamID(teamID);
-        setStartDate(startDate);
+        setCurrentEmployment(currentEmployment);
+
     }
 
     public Racer(int racerID, String firstName, String lastName, LocalDate dateOfBirth, int addressID, String nationality) {
@@ -49,15 +47,15 @@ public class Racer {
         setNationality(nationality);
     }
 
-    public Racer(int racerID, String firstName, String lastName, LocalDate dateOfBirth, int addressID, String nationality, int teamID, LocalDate startDate) {
+    public Racer(int racerID, String firstName, String lastName, LocalDate dateOfBirth, int addressID, String nationality, Employment currentEmployment) {
         setRacerID(racerID);
         setFirstName(firstName);
         setLastName(lastName);
         setDateOfBirth(dateOfBirth);
         setAddressID(addressID);
         setNationality(nationality);
-        setTeamID(teamID);
-        setStartDate(startDate);
+        setCurrentEmployment(currentEmployment);
+
     }
 
     //++++++++++++++++++++++Getter&Setter++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -111,20 +109,12 @@ public class Racer {
         this.nationality = nationality;
     }
 
-    public int getTeamID() {
-        return teamID;
+    public Employment getCurrentEmployment() {
+        return currentEmployment;
     }
 
-    public void setTeamID(int teamID) {
-        this.teamID = teamID;
-    }
-
-    public LocalDate getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(LocalDate startDate) {
-        this.startDate = startDate;
+    public void setCurrentEmployment(Employment currentEmployment) {
+        this.currentEmployment = currentEmployment;
     }
 
     //++++++++++++++++++++++Methods++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
