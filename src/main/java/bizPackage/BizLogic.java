@@ -1,6 +1,7 @@
 package bizPackage;
 
 import java.sql.SQLException;
+import connectionPackage.DBConnection;
 
 public class BizLogic {
     public BizLogic() throws SQLException {
@@ -10,5 +11,5 @@ public class BizLogic {
         System.out.println("Hallo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 
-//    DBConnection dbConnection = DBConnection.getConnection();
+    DBConnection dbConnection = DBConnection.getInstance();
 }
